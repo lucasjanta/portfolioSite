@@ -14,6 +14,7 @@ section:nth-child(odd){
 }
 
 nav {
+    padding: 0 1.5em;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,8 +30,9 @@ nav {
 nav ul{
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 3em;
     list-style: none;
+    /* margin-right: 2em; */
 }
 
 nav ul li a{
@@ -41,32 +43,71 @@ nav ul li a{
     display: none;
 }
 
-@media (max-width: 600px) {
+.bar1{
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50px;
+    margin-bottom: 5px;
+}
+
+.bar2{
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50px;
+    margin-bottom: 5px;
+}
+
+.bar3{
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+@media (max-width: 650px) {
     nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        padding: 0;
         margin-top: 0;
-        background-color: aqua;
-        position: fixed;
+        background: none;
         width: 100vw;
         height: 10vh;
-        left: 50%;
-        transform: translateX(-50%);
+        position: fixed;
+    }
+
+    nav img{
+        margin-left: 1em;
     }
     
     nav ul{
         display: flex;
-        visibility: hidden;
         flex-direction: column;
-        gap: 1em;
+        width: 30%;
+        height: 50vh;
+        align-items: left;
+        justify-content: space-evenly;
+        background-color: aqua;
+        gap: 1.5em;
         list-style: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 0;
     }
 
     .menuburger{
-        display: contents;
+        display: flex;
+        flex-direction: column;
         cursor: pointer;
-        
+        margin-right: 1em;
+        background-color: rgba(73, 73, 73, 0.148);
+        z-index: 5;
+        padding: 5px;
     }
+
+    .links{
+        visibility: hidden;
+    }
+
 }
