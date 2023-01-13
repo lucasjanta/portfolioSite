@@ -2,6 +2,7 @@ html, body{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 section{
@@ -14,13 +15,14 @@ section:nth-child(odd){
 }
 
 nav {
-    padding: 0 1.5em;
+    padding: 0.3em 1.5em;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-top: 1em;
     background-color: aqua;
+    border-radius: 40px;
     position: fixed;
     width: 80vw;
     left: 50%;
@@ -83,8 +85,9 @@ nav ul li a{
     nav ul{
         display: flex;
         flex-direction: column;
-        width: 30%;
+        width: 40vw;
         height: 50vh;
+        overflow: hidden;
         align-items: left;
         justify-content: space-evenly;
         background-color: aqua;
